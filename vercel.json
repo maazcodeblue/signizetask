@@ -2,8 +2,6 @@
     "version": 2,
     "builds": [{ "src": "signize.html", "use": "@vercel/static" }],
     "routes": [{ "src": "/(.*)", "dest": "/signize.html" }],
-    "projectSettings": {
-      "framework": null
-    }
+    
   }
   
