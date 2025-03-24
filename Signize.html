@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-image{
+height: 40px;
+margin: 50px;
+}
+.r-image{
+    height: 40px;
+}
+.nav-item{
+color: white;
+margin: 250px;
+font-weight: 500;
+font-size: 18px;
+font-family: sans-serif;
+line-height: 22px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    padding-top: 60px !important ;
+    display: flex;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+    
+}
+
+.left{
+    width: 55%;
+}
+.right{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 200px;
+    width: 40%;
+}
+.stars{
+    display: flex;
+    vertical-align: top;
+}
+.text{
+    font-size: 54px;
+    font-style: normal;
+font-family: sans-serif;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    width: 90%;
+
+}
+.data{
+    font-family: sans-serif;
+    font-size: 16px;
+    
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.quote{
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+           
+            
+            
+            
+        }
+
+        .grid-item {
+            text-align: center;
+            cursor: pointer;
+            border: 2px solid transparent;
+            padding: 7px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hide default checkboxes */
+        .grid-item input[type="checkbox"] {
+            display: none;
+        }
+
+        /* Selected state */
+        .grid-item input[type="checkbox"]:checked + .content {
+            border: 3px solid #D7A65B;
+          
+            border-radius: 5px;
+        }
+
+        .content img {
+            width: 150px;
+          
+            /* object-fit: cover; */
+            display: block;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            /* margin: auto; */
+        }
+
+        .content p {
+            margin: 5px 0 0;
+            font-size: 12px;
+            background-color: black;
+            color: white;
+            padding: 7px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .content{
+            padding: 8px;
+        }
+        .upload-image{
+            padding: 25px;
+            border: 2px dashed #D7A65B;
+            text-align: center;
+            border-radius: 10px;
+            
+        }
+.hiddenFile{
+    display: none;
+}
+.upload-image{
+    cursor: pointer;
+}
+.image-info{
+    font-size: 14px;
+    color: #666;
+}
+.name{
+   
+    margin-top: 10px;
+    font-family: inherit;
+    color: #666;
+    font-weight: bold;
+}
+.email{
+    margin-top: 10px ;
+    color: #666;
+    font-weight: bold;
+}
+.phone{
+    margin-top: 10px;
+    color: #666;
+    font-weight: bold;
+}
+.form-control{
+display: block;
+width: 97%;
+padding: 10px;
+border-radius: 6px;
+border: 1px solid gray;
+
+}
+#button{
+    
+  padding: 20px;
+  width: 90%;
+  margin: 40px 0 0 30px ;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+ 
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-link" style=>
+            <img src="Signize_logo_White_150x (1).svg" alt="" class="nav-image">
+        </div>
+        <div class="nav-link">
+            <p class="nav-item">Free World Wide Shipping - Recieve your Sign in 10 days</p>
+        </div>
+    </div>
+    <div class="container">
+
+<div class="left">
+    <div class="rating">
+<div class="rating-image">
+<img src="https://cdn.shopify.com/s/files/1/0677/8041/1645/files/riview.png?v=1728539217" alt="" class="r-image">
+</div>
+<div class="star-side">
+<div class="stars">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="#F8B94CFF" class="r-1jjgqrx" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="#F8B94CFF" class="r-1jjgqrx" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="#F8B94CFF" class="r-1jjgqrx" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="#F8B94CFF" class="r-1jjgqrx" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="#F8B94CFF" class="r-1jjgqrx" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path></svg>
+</div>
+<div class="write">
+<p><b>Rated  4.8/5</b> by over <b>300 business owners</b></p>
+</div>
+</div>
+    </div>
+
+    <div class="text">
+<h1 class="text">Get a high quality custom sign for your business</h1>
+    </div>
+<div class="data">
+    <div class="quote">
+
+<img src="https://cdn.shopify.com/s/files/1/0598/7391/9062/files/material-symbols-light_award-star.png?v=1734497480" alt="" class="color">
+        <p> Expertly-crafted signage customized for your business</p>
+</div>
+<div class="quote">
+    <img src="https://cdn.shopify.com/s/files/1/0598/7391/9062/files/Frame_1484581240.png?v=1734497524" alt="">
+<p> Fastest response in the industry - ships within 10 days</p>
+
+</div>
+<div class="quote">
+    <img src="https://cdn.shopify.com/s/files/1/0598/7391/9062/files/tdesign_time-filled.png?v=1734497582" alt="">
+<p> 8+ years of extensive industry experience</p>
+
+</div>
+<div class="quote">
+    <img src="https://cdn.shopify.com/s/files/1/0598/7391/9062/files/trick_2.png?v=1735375030" alt="">
+<p> Comes with 2-year warranty for all signs</p>
+
+</div>
+<div class="quote">
+    <img src="https://cdn.shopify.com/s/files/1/0598/7391/9062/files/Frame_1484581240.png?v=1734497524" alt="">
+<p>For quotations and inquiries, call us at (914)-303-1803</p>
+
+</div>
+</div>
+</div>
+
+<div class="right">
+    
+<h2>Get Your Free Sign Mockup & Quote in as Fast as 2 Hours!</h2>
+<P class="sst">Select Sign Type (optional)</P>
+
+<form action="">
+    <div class="grid-container">
+        <!-- Item 1 -->
+        <label class="grid-item">
+            <input type="checkbox" value="bladeSign">
+            <div class="content">
+                <img src="https://cdn.shopify.com/s/files/1/0699/3553/0271/files/3d_blade_sign.jpg?v=1711105522" alt="Image 1">
+                <p>3D BLADE SIGN</p>
+            </div>
+        </label>
+    
+        <!-- Item 2 -->
+        <label class="grid-item">
+            <input type="checkbox" value="acrylicFront">
+            <div class="content">
+                <img src="https://cdn.shopify.com/s/files/1/0699/3553/0271/files/Popped.jpg?v=1711105521" alt="Image 2">
+                <p>ACRYLIC FRONT-LIT</p>
+            </div>
+        </label>
+    
+        <!-- Item 3 -->
+        <label class="grid-item">
+            <input type="checkbox" value="metalBacklit">
+            <div class="content">
+                <img src="https://cdn.shopify.com/s/files/1/0699/3553/0271/files/AXdD.jpg?v=1711105521" alt="Image 3">
+                <p>3D METAL BACK-LIT</p>
+            </div>
+        </label>
+    
+        <!-- Item 4 -->
+        <label class="grid-item">
+            <input type="checkbox" value="channelLetter">
+            <div class="content">
+                <img src="https://cdn.shopify.com/s/files/1/0598/7391/9062/files/11471_BrLite_1_1__LE_auto_x2_e62d0681-9883-4e1c-b9ac-7440053b636c.webp?v=1722925858" alt="Image 4">
+                <p>CHANNEL LETTER</p>
+            </div>
+        </label>
+    
+        <!-- Item 5 -->
+        <label class="grid-item">
+            <input type="checkbox" value="threeSignize">
+            <div class="content">
+                <img src="https://cdn.shopify.com/s/files/1/0598/7391/9062/files/Storefront_Signage.webp?v=1721972968" alt="Image 5">
+                <p>3D SIGNAGE</p>
+            </div>
+        </label>
+    
+        <!-- Item 6 -->
+        <label class="grid-item">
+            <input type="checkbox" value="lightbox">
+            <div class="content">
+                <img src="https://cdn.shopify.com/s/files/1/0598/7391/9062/files/Lightbox.webp?v=1721972968" alt="Image 6">
+                <p>LIGHTBOX</p>
+            </div>
+        </label>
+    </div>
+
+<div class="upload-image" onclick="document.getElementById('file-input').click()">
+    <p>Upload an image (optional)</p>
+<img src="https://cdn.shopify.com/s/files/1/0598/7391/9062/files/upload-image-icon.png?v=1725972785" alt="">
+
+</div>
+<div class="image-info">
+   <p>Select Images</p> 
+    Max file size: 20MB | Allowed file types: png, jpg, jpeg, gif, ai, eps, pdf, svg, tiff, avif, webp
+</div>
+<input type="file" class="hiddenFile" id="file-input">
+ <div class="name">
+<label for="name">Name</label>
+<input type="text" name="name" id="name" placeholder="Full Name" class="form-control">
+ </div>
+
+ <div class="email">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Example@mail.com" class="form-control">
+     </div>
+
+     <div class="phone">
+        <label for="phone">Phone Number</label>
+        <input type="phone" name="phone" id="phone" placeholder="Example@mail.com" class="form-control">
+         </div>
+
+         <div>
+            <button type="submit" id="button">Get Your Free Quote and Mockup</button>
+         </div>
+</form>
+    </div>
+
+
+
+</div>
+
+
+    </div>
+</body>
+</html>
